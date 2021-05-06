@@ -46,7 +46,7 @@
                          <button class="btn btn-light fs-4" type="submit" role="button">Iniciar sesión</button>
                     </div>
                     <div class="text-center p-1">
-                        <button class="btn btn-light fs-4" href="{{route('register')}" role="button">Registrarse</button>
+                        <a class="btn btn-light fs-4" href="{{ route('register') }}" role="button">Registrarse</a>
                     </div>
                     <div class="text-center p-5">
                         <a class="btn btn-light fs-4" href="{{route('welcome')}" role="button">Iniciar sin usuario</a>

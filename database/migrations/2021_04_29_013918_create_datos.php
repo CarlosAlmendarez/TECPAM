@@ -16,6 +16,10 @@ class CreateDatos extends Migration
         Schema::create('datos', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('titulo');
+            $table->string('texto');
+            $table->string('imagen');
+            $table->string('categoria');
         });
     }
 

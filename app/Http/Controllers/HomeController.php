@@ -3,6 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Categorias;
+use App\Datos;
+use App\Enlaces;
+use App\Videos;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class HomeController extends Controller
 {
@@ -20,7 +26,9 @@ class HomeController extends Controller
 
     public function videos()
     {
-        return view('videos');
+        $videos = videos::all();
+
+        return view('videos')->with("videos",$videos);
     }
 
     public function juegos()
@@ -30,11 +38,15 @@ class HomeController extends Controller
 
     public function datos()
     {
-        return view('datos');
+        $datos = datos::all();
+
+        return view('datos')->with("datos",$datos);
     }
 
     public function catalogos()
     {
-        return view('catalogos');
+        $catalogos = catalogos::all();
+
+        return view('catalogos')->with("catalogos",$catalogos);
     }
 }

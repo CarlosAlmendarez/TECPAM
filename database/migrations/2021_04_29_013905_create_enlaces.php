@@ -16,6 +16,9 @@ class CreateEnlaces extends Migration
         Schema::create('enlaces', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('nombre');
+            $table->string('enlace');
+            $table->string('categoria');
         });
     }
 
