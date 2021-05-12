@@ -15,7 +15,7 @@
             <label for="allowed-missing-words">Palabras faltantes :
                 <input id="allowed-missing-words" type="number" min="0" max="5" step="1" value="2">
             </label>
-            <label for="max-grid-growth">Tamaño máximo de la sopa :
+            <label for="max-grid-growth" style="visibility: hidden">Tamaño máximo de la sopa :
                 <input id="max-grid-growth" type="number" min="0" max="5" step="1" value="5">
             </label>
             <label for="extra-letters">Letras Extra :
