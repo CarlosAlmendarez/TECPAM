@@ -51,5 +51,26 @@ class UserSeeder extends Seeder
             'categoria' => 'tecnologia',
             'enlace' => 'https://www.youtube.com/embed/AU_m-7dDVR8',
         ]);
+        DB::table('videos')->insert([
+            'nombre' => 'La tecnología que cambia nuestra vida',
+            'duracion' => '13:17',
+            'calificacion' => '5',
+            'categoria' => 'tecnologia',
+            'enlace' => 'https://www.youtube.com/embed/AU_m-7dDVR8',
+        ]);
+        DB::table('videos')->insert([
+            'nombre' => 'La tecnología que cambia nuestra vida',
+            'duracion' => '13:17',
+            'calificacion' => '5',
+            'categoria' => 'tecnologia',
+            'enlace' => 'https://www.youtube.com/embed/AU_m-7dDVR8',
+        ]);
+        DB::table('videos')->insert([
+            'nombre' => 'La tecnología que cambia nuestra vida',
+            'duracion' => '13:17',
+            'calificacion' => '5',
+            'categoria' => 'tecnologia',
+            'enlace' => 'https://www.youtube.com/embed/AU_m-7dDVR8',
+        ]);
     }
 }
