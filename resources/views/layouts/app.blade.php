@@ -11,6 +11,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -27,7 +28,7 @@
 
         <nav class="navbar px-5" style="background: linear-gradient(50deg, rgba(7, 185, 7, 0.747), rgba(7, 179, 179, 0.76));">
             <div class="container-fluid">
-            <a class="navbar-brand" href="{{ route('welcome') }}" style="color: black;"><h1 class="display-6">{{ config('app.name', 'TECPAM') }}</h1></a>
+            <a class="navbar-brand" href="{{ route('welcome') }}" style="color: black;"><h1 class="display-6">TECPAM</h1></a>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             @guest
                 <a href="{{ route('login') }}" class="btn btn-light fs-3">Iniciar sesión</a>

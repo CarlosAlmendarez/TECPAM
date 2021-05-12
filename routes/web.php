@@ -23,3 +23,4 @@ Route::get('/catalogos','HomeController@catalogos')->name('catalogos');
 Route::get('/juegos', 'HomeController@juegos')->name('juegos');
 Route::get('/videos', 'HomeController@videos')->name('videos');
 Route::get('/datos', 'HomeController@datos')->name('datos');
+Route::get('/dat/{id}','HomeController@datosG')->name('dat');

@@ -19,6 +19,7 @@ class CreateEnlaces extends Migration
             $table->string('nombre');
             $table->string('enlace');
             $table->string('categoria');
+            $table->string('tipo');
         });
     }
 

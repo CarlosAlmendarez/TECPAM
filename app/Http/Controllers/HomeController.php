@@ -39,13 +39,26 @@ class HomeController extends Controller
     public function datos()
     {
         $datos = datos::all();
+        $cont = count($datos);
+        $c = 0;
+        return view('datos')->with("datos",$datos)->with("cont",$cont)->with("c",$c);
+    }
 
-        return view('datos')->with("datos",$datos);
+    public function datosG(Request $request, $id)
+    {
+        $datos = datos::all();
+        $cont = count($datos);
+        $c = $id + 1;
+        if( $c >= $cont)
+        {
+            $c=0;
+        }
+        return view('datos')->with("datos",$datos)->with("cont",$cont)->with("c",$c);
     }
 
     public function catalogos()
     {
-        $catalogos = catalogos::all();
+        $catalogos = Enlaces::all();
 
         return view('catalogos')->with("catalogos",$catalogos);
     }
