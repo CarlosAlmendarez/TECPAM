@@ -36,7 +36,7 @@
               <div class="col">
                 <div class="card text-center" style="background-color: rgb(228, 228, 228);">
                   <div class="card-body">
-                      <h5 class="card-title display-6 fw-bold">Cátalogo</h5>
+                      <h5 class="card-title display-6 fw-bold">Catálogo</h5>
                     </div>
                     <a href="{{ route('catalogos') }}" style="color: black;">
                         <i class="fas fa-book fa-10x py-4"></i>

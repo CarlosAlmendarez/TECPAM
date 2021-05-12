@@ -17,7 +17,7 @@ class CreateDatos extends Migration
             $table->id();
             $table->timestamps();
             $table->string('titulo');
-            $table->string('texto');
+            $table->text('texto');
             $table->string('imagen');
             $table->string('categoria');
         });
