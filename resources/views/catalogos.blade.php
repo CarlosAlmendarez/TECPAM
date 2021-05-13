@@ -26,32 +26,14 @@
                         <h1 class=" px-3 display-5">
                             Enlaces
                         </h1>
-                        <a href="" class="list-group-item list-group-item-action">
-                            <li class="list-group-item fs-4">                    
-                                https://revistadigital.inesem.es/informatica-y-tics/  
+                        @foreach ($catalogos as $enlace)
+                        <a href="{{$enlace->enlace}}" class="list-group-item list-group-item-action">
+                            <li class="list-group-item fs-4">  
+                            {{$enlace->tipo}} -> {{$enlace->nombre}}                  
                             </li>
                         </a> 
-                        <a href="" class="list-group-item list-group-item-action">
-                            <li class="list-group-item fs-4">                    
-                                https://revistadigital.inesem.es/informatica-y-tics/  
-                            </li>
-                        </a> 
-                        <a href="" class="list-group-item list-group-item-action">
-                            <li class="list-group-item fs-4">                    
-                                https://revistadigital.inesem.es/informatica-y-tics/  
-                            </li>
-                        </a> 
-                        <a href="" class="list-group-item list-group-item-action">
-                            <li class="list-group-item fs-4">                    
-                                https://revistadigital.inesem.es/informatica-y-tics/  
-                            </li>
-                        </a> 
-                        <a href="" class="list-group-item list-group-item-action">
-                            <li class="list-group-item fs-4">                    
-                                https://revistadigital.inesem.es/informatica-y-tics/  
-                            </li>
-                        </a> 
-                        
+                        @endforeach
+
                     </ul>
                 </div>
                 
