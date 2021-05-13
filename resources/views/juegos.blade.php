@@ -5,14 +5,21 @@
 <h1 class="display-3 text-center fw-bolder">
    JUEGOS
 </h1>
-
+    <div class="card-text p-5">
+        <p class="h4">1.- Haz "click" en el botón izquierdo de tu mouse y arrastra sin soltar desde la primera letra hasta la ultima de la palabra que encuentres </p>
+        <p class="h4">2.- La palabra encontrada sera subrayada</p>
+        <p class="h4">3.- Si deseas agregar una nueva palabra, haz "click" con el boton izquierdo en el botón "Agregar palabra nueva" y escribe en el recuadro blanco que aparece, la palabra que desees.</p>
+        <p class="h4">4.- Enseguida, haz "click" en el botón "Crear nueva sopa de letras"</p>
+        <p class="h4">5.- Si deseas saber en donde se encuentran las palabras, haz "click" en el botón "Resolver sopa de letras"</p>
+    </div>
     <div id="main" role="main" class="ml-5 mb-5 p-5">
         <div id="puzzle"></div>
         <ul id="words">
-            <li><button id="add-word">Add word</button></li>
+            <li><button id="add-word">Agregar palabra nueva</button></li>
         </ul>
+        
         <fieldset id="controls">
-            <label for="allowed-missing-words">Palabras faltantes :
+            <label for="allowed-missing-words">Palabras que pueden faltar:
                 <input id="allowed-missing-words" type="number" min="0" max="5" step="1" value="2">
             </label>
             <label for="max-grid-growth" style="visibility: hidden">Tamaño máximo de la sopa :
