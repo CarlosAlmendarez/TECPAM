@@ -19,7 +19,7 @@
                     <div class="col border"><div class="fs-4 text-center">Películas <a href="#"><i style="color: black;" class="fas fa-video p-3 fa-3x"></i></a> </div></div>
                     <div class="col border"><div class="fs-4 text-center">Noticias <a href="#"><i style="color: black;" class="far fa-newspaper p-3 fa-3x"></i></a> </div></div>
                     <div class="col border"><div class="fs-4 text-center">Recetas <a href="#"><i style="color: black;" class="fas fa-utensil-spoon p-3 fa-3x"></i></a> </div></div>
-                    <div class="col border"><div class="fs-4 text-center">Documentos<a href="#"><i style="color: black;" class="p-3 far fa-list-alt fa-3x"></i></a></div></div>
+                    <div class="col border"><div class="fs-4 text-center">Otros<a href="#"><i style="color: black;" class="p-3 far fa-list-alt fa-3x"></i></a></div></div>
                 </div>
                 <div class="card">
                     <ul class="list-group">

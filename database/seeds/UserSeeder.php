@@ -242,7 +242,7 @@ class UserSeeder extends Seeder
         DB::table('datos')->insert([
             'titulo' => 'La primera WebCam',
             'texto' => ' La primera webcam de la historia fue utilizada para hacer seguimiento de la operación de una máquina de café. Fue implementada en el laboratorio de computación de la Universidad de Cambridge. Los ingenieros querían saber si el café ya estaba listo antes de bajar por él –la máquina se encontraba en otro piso-.',
-            'imagen' => 'https://www.abadiadigital.com/wp-content/uploads/2014/11/webcam1.jpg',
+            'imagen' => 'https://hardzone.es/app/uploads-hardzone.es/2019/10/Webcam.jpg',
             'categoria' => 'tecnologia',
         ]);
          DB::table('datos')->insert([
@@ -335,5 +335,226 @@ class UserSeeder extends Seeder
             'imagen' => 'https://gacetamedica.com/wp-content/uploads/2020/03/GettyImages-1067001954.jpg',
             'categoria' => 'salud',
         ]);   
+        /*
+            $table->string('nombre');
+            $table->string('enlace');
+            $table->string('categoria');
+            $table->string('tipo'); */
+        DB::table('enlaces')->insert([
+            'nombre' => 'La tecnología, la(s) cultura(s) tecnológica(s) y la educación popular en tiempos de globalización',
+            'enlace' => 'https://journals.openedition.org/polis/6242',
+            'categoria' => 'tecnologia',
+            'tipo' => 'documento',
+        ]);     
+        DB::table('enlaces')->insert([
+            'nombre' => 'EL ARTE COMO DOCUMENTO HISTÓRICO: LAS CARRERAS DE COCHES DE MADERA EN QUITO',
+            'enlace' => 'http://repositorio.puce.edu.ec/bitstream/handle/22000/8125/El%20arte%20como%20documento%20hist%C3%B3rico.pdf?sequence=1&isAllowed=y',
+            'categoria' => 'arte',
+            'tipo' => 'documento',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'Cronología y lista de Faraones y gobernantes de Egipto',
+            'enlace' => 'https://redhistoria.com/lista-de-faraones-y-reyes-de-egipto/',
+            'categoria' => 'historia',
+            'tipo' => 'documento',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'El futuro de la química sostenible',
+            'enlace' => 'http://www.madrimasd.org/cienciaysociedad/documentos/doc/el_futuro_de_la_quimica_sostenible.pdf',
+            'categoria' => 'ciencia',
+            'tipo' => 'documento',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'Estudio Internacional de Cultura Científica',
+            'enlace' => 'http://www.madrimasd.org/cienciaysociedad/documentos/doc/Cultura_cientifica_BBVA_08-05-2012.pdf',
+            'categoria' => 'ciencia',
+            'tipo' => 'documento',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'Cerca del Cielo: patrimonio biológico en la Zona ALMA',
+            'enlace' => 'https://openlibra.com/es/book/cerca-del-cielo-patrimonio-biologico-en-la-zona-alma',
+            'categoria' => 'ciencia',
+            'tipo' => 'libro',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'Historia del arte II',
+            'enlace' => 'https://openlibra.com/es/book/historia-del-arte-ii',
+            'categoria' => 'arte',
+            'tipo' => 'libro',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'Propuestas Pedagógicas',
+            'enlace' => 'https://openlibra.com/es/book/propuestas-pedagogicas',
+            'categoria' => 'educacion',
+            'tipo' => 'libro',
+        ]);  
+        DB::table('enlaces')->insert([
+            'nombre' => 'Educación Física. Serie para la enseñanza en el modelo 1 a 1',
+            'enlace' => 'https://openlibra.com/es/book/educacion-fisica-serie-para-la-ensenanza-en-el-modelo-1-a-1',
+            'categoria' => 'actividadfisica',
+            'tipo' => 'libro',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'Una aventura emocionante. Cuaderno de actividades de educación emocional',
+            'enlace' => 'https://openlibra.com/es/book/una-aventura-emocionante-cuaderno-de-actividades-de-educacion-emocional',
+            'categoria' => 'salud',
+            'tipo' => 'libro',
+        ]);  
+        DB::table('enlaces')->insert([
+            'nombre' => 'La creencia en el contenido de nicotina del cigarrillo influye en el cerebro',
+            'enlace' => 'https://www.scientificamerican.com/espanol/noticias/la-creencia-en-el-contenido-de-nicotina-del-cigarrillo-influye-en-el-cerebro/',
+            'categoria' => 'salud',
+            'tipo' => 'articulo',
+        ]);     
+        DB::table('enlaces')->insert([
+            'nombre' => 'Un videojuego para resolver problemas cuánticos',
+            'enlace' => 'https://www.scientificamerican.com/espanol/noticias/un-videojuego-para-resolver-problemas-cuanticos/',
+            'categoria' => 'tecnologia',
+            'tipo' => 'articulo',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'Cuando las señales químicas desaparecen, las hormigas emplean la memoria',
+            'enlace' => 'https://www.scientificamerican.com/espanol/noticias/cuando-las-senales-quimicas-desaparecen-las-hormigas-emplean-la-memoria/',
+            'categoria' => 'ciencia',
+            'tipo' => 'articulo',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'Identifican la ruta de propagación del ébola en Liberia',
+            'enlace' => 'https://www.scientificamerican.com/espanol/noticias/identifican-la-ruta-de-propagacion-del-ebola-en-liberia/',
+            'categoria' => 'salud',
+            'tipo' => 'articulo',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'Descubren un extraño planeta con tres soles',
+            'enlace' => 'https://www.scientificamerican.com/espanol/noticias/descubren-un-extrano-planeta-con-tres-soles-con-video/',
+            'categoria' => 'ciencia',
+            'tipo' => 'articulo',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'Poema 20 Veinte poemas de amor y una canción desesperada (1924)',
+            'enlace' => 'https://www.buscapoemas.net/poema/Poema-20-Veinte-poemas-de-amor-y-una-canci%C3%B3n-desesperada-(1924)/Pablo-Neruda/5919.htm',
+            'categoria' => 'arte',
+            'tipo' => 'poema',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'El amigo',
+            'enlace' => 'https://www.buscapoemas.net/poema/El-amigo/Jos%C3%A9-%C3%81ngel-Buesa/3447.htm',
+            'categoria' => 'arte',
+            'tipo' => 'poema',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'Palabras para Julia',
+            'enlace' => 'https://www.buscapoemas.net/poema/Palabras-para-Julia/Jos%C3%83%C2%A9-Agust%C3%83%C2%ADn-Goytisolo/2187.htm',
+            'categoria' => 'arte',
+            'tipo' => 'poema',
+        ]);  
+        DB::table('enlaces')->insert([
+            'nombre' => 'Mi secreto',
+            'enlace' => 'https://www.buscapoemas.net/poema/Mi-secreto/Amado-Nervo/6408.htm',
+            'categoria' => 'arte',
+            'tipo' => 'poema',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'Un año más',
+            'enlace' => 'https://www.buscapoemas.net/poema/Un-a%C3%B1o-m%C3%A1s/Salvador-Novo/6775.htm',
+            'categoria' => 'arte',
+            'tipo' => 'poema',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'ESCUELA DE VAGABUNDOS',
+            'enlace' => 'https://www.youtube.com/watch?v=HGOVQfYjUkc&list=PL5Elc2OLiWk6pkscyMTC6DCbE4GIeqfAe&index=2',
+            'categoria' => 'arte',
+            'tipo' => 'pelicula',
+        ]);     
+        DB::table('enlaces')->insert([
+            'nombre' => 'HEIDI 1937',
+            'enlace' => 'https://www.youtube.com/watch?v=4DLsumVnu0E&list=PL5Elc2OLiWk6pkscyMTC6DCbE4GIeqfAe&index=13',
+            'categoria' => 'arte',
+            'tipo' => 'pelicula',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'Se equivoco la Cigüeña | La India María',
+            'enlace' => 'https://www.youtube.com/watch?v=VdGLcUmRviA',
+            'categoria' => 'arte',
+            'tipo' => 'pelicula',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'EL PADRECITO',
+            'enlace' => 'https://www.youtube.com/watch?v=OWR1WVyk6Bw',
+            'categoria' => 'arte',
+            'tipo' => 'pelicula',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'Los tres García',
+            'enlace' => 'https://www.youtube.com/watch?v=GZTKXhwz8xM',
+            'categoria' => 'arte',
+            'tipo' => 'pelicula',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'LOS TRECE MUSEOS MÁS ESPERADOS PARA EL 2021',
+            'enlace' => 'https://viajes.nationalgeographic.com.es/lifestyle/trece-museos-mas-esperados-para-2021_16328',
+            'categoria' => 'arte',
+            'tipo' => 'noticia',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'La Inteligencia Artificial hará aumentar la economía mundial en 15,7 billones de dólares en 2030',
+            'enlace' => 'https://www.elmundofinanciero.com/noticia/94451/empresas/la-inteligencia-artificial-hara-aumentar-la-economia-mundial-en-157-billones-de-dolares-en-2030-.html',
+            'categoria' => 'tecnologia',
+            'tipo' => 'noticia',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'El estado de la Industria 4.0 en México y el camino hacia el Industrial Internet of Things',
+            'enlace' => 'http://t21.com.mx/opinion/columna-invitada/2021/05/11/estado-industria-40-mexico-camino-hacia-industrial-internet-of',
+            'categoria' => 'tecnologia',
+            'tipo' => 'noticia',
+        ]);  
+        DB::table('enlaces')->insert([
+            'nombre' => 'NUEVA CEPA DE COVID LLEGA A MÉXICO',
+            'enlace' => 'https://hospitalcmq.com/es/blog/nueva-cepa-de-covid/',
+            'categoria' => 'salud',
+            'tipo' => 'noticia',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => '7 fantásticos hallazgos de Curiosity, el vehículo de la NASA que lleva 3.000 días marcianos explorando el planeta rojo',
+            'enlace' => 'https://www.bbc.com/mundo/noticias-55619879',
+            'categoria' => 'historia',
+            'tipo' => 'noticia',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'Pastel de zanahoria fácil',
+            'enlace' => 'https://www.recetasgratis.net/receta-de-pastel-de-zanahoria-facil-9470.html',
+            'categoria' => 'salud',
+            'tipo' => 'receta',
+        ]);     
+        DB::table('enlaces')->insert([
+            'nombre' => 'Albóndigas sin gluten',
+            'enlace' => 'https://www.recetasgratis.net/receta-de-albondigas-sin-gluten-74995.html',
+            'categoria' => 'salud',
+            'tipo' => 'receta',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'Rosquillas de nata',
+            'enlace' => 'https://www.recetasgratis.net/receta-de-rosquillas-de-nata-75151.html',
+            'categoria' => 'salud',
+            'tipo' => 'receta',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'Empanadillas de verduras',
+            'enlace' => 'https://www.recetasgratis.net/receta-de-empanadillas-de-verduras-74390.html',
+            'categoria' => 'salud',
+            'tipo' => 'receta',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'Espagueti con crema de elote',
+            'enlace' => 'https://www.recetasgratis.net/receta-de-espagueti-con-crema-de-elote-59573.html',
+            'categoria' => 'salud',
+            'tipo' => 'receta',
+        ]);
+        DB::table('enlaces')->insert([
+            'nombre' => 'Horóscopo',
+            'enlace' => 'https://www.hola.com/horoscopo/',
+            'categoria' => 'historia',
+            'tipo' => 'otro',
+        ]);        
     }
 }
