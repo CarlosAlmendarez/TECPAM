@@ -62,4 +62,53 @@ class HomeController extends Controller
 
         return view('catalogos')->with("catalogos",$catalogos);
     }
+
+    public function catalogosDoc()
+    {
+        $catalogos = Enlaces::all()->where('tipo', 'documento');
+
+        return view('catalogos')->with("catalogos",$catalogos);
+    }
+    public function catalogosLib()
+    {
+        $catalogos = Enlaces::all()->where('tipo', 'libro');;
+
+        return view('catalogos')->with("catalogos",$catalogos);
+    }
+    public function catalogosArt()
+    {
+        $catalogos = Enlaces::all()->where('tipo', 'articulo');;
+
+        return view('catalogos')->with("catalogos",$catalogos);
+    }
+    public function catalogosPoe()
+    {
+        $catalogos = Enlaces::all()->where('tipo', 'poema');;
+
+        return view('catalogos')->with("catalogos",$catalogos);
+    }
+    public function catalogosPeli()
+    {
+        $catalogos = Enlaces::all()->where('tipo', 'pelicula');;
+
+        return view('catalogos')->with("catalogos",$catalogos);
+    }
+    public function catalogosNot()
+    {
+        $catalogos = Enlaces::all()->where('tipo', 'noticia');;
+
+        return view('catalogos')->with("catalogos",$catalogos);
+    }
+    public function catalogosRec()
+    {
+        $catalogos = Enlaces::all()->where('tipo', 'receta');;
+
+        return view('catalogos')->with("catalogos",$catalogos);
+    }
+    public function catalogosOtro()
+    {
+        $catalogos = Enlaces::all()->where('tipo', 'otro');;
+
+        return view('catalogos')->with("catalogos",$catalogos);
+    }
 }
