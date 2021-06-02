@@ -26,7 +26,7 @@ class HomeController extends Controller
 
     public function videos()
     {
-        $videos = videos::all();
+        $videos = videos::all()->shuffle();
 
         return view('videos')->with("videos",$videos);
     }
@@ -38,7 +38,7 @@ class HomeController extends Controller
 
     public function datos()
     {
-        $datos = datos::all();
+        $datos = datos::all()->shuffle();
         $cont = count($datos);
         $c = 0;
         return view('datos')->with("datos",$datos)->with("cont",$cont)->with("c",$c);
